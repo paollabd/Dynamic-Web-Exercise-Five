@@ -1,22 +1,182 @@
-.App {
-  text-align: center;
+body{
+  background-color: lightpink;
 }
 
-.App-logo {
-  height: 40vmin;
-}
+/*Login*/
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.loginBtn {
+  background-size: 200% auto;
+  background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%);
+  border-color: white;
+  border-radius: 10px;
+  border-style: solid;
   color: white;
+  display: block;
+  font-size: 10pt;
+  flex: 1 1 auto;
+  /*margin: 0 auto;*/
+  margin-left: 35%;
+  margin-top: 30%;
+  padding: 8%;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100px;
 }
 
-.App-link {
-  color: #09d3ac;
+.loginBtn:hover {
+  background-position: right center;
+  transition: 0.5s;
+}
+
+.formContainer{
+  background-color: white;
+  margin-left: 23%;
+  margin-top: 10%;
+  padding:2%;
+  width: 20%;
+}
+
+.login{
+  display:flex;
+  margin-left: 14%;
+  margin-top: 2%;
+}
+
+.loginInputs{
+  margin-left: 40px;
+}
+
+.joinBtn {
+  background-color: lightpink;
+  background-size: 200% auto;
+  border-color: white;
+  border-radius: 10px;
+  border-width: 2px;
+  color: white;
+  display: block;
+  font-size: 10pt;
+  margin: 0 auto;
+  padding: 5%;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100px;
+}
+
+.joinBtn:hover {
+  background-image: linear-gradient(to right, white 0%, lightpink 51%, pink 100%);
+  background-position: right center; /* change the direction of the change here */
+  transition: 0.8s;
+}
+
+.joinContainer{
+  background-color: lightpink;
+  border-color:white;
+  border-width: 1px; /* this allows you to adjust the thickness */
+  border-style: solid;
+  color: white;
+  margin-top: 10%;
+  padding:2%;
+  text-align: center;
+  width: 15%;
+}
+
+
+
+/*Signup*/
+
+.signup{
+  display:flex;
+  margin-left: 30%;
+  margin-top: 2%;
+}
+
+.createBtn {
+  background-size: 200% auto;
+  background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%);
+  border-color: white;
+  border-radius: 10px;
+  border-style: solid;
+  color: white;
+  display: block;
+  font-size: 10pt;
+  flex: 1 1 auto;
+  /*margin: 0 auto;*/
+  margin-left: 4%;
+  margin-top: 24%;
+  padding: 5%;
+  text-align: center;
+  text-transform: uppercase;
+  width: 70%;
+}
+
+.createBtn:hover {
+  background-position: right center;
+  transition: 0.5s;
+}
+
+.signupContainer{
+  background-color: white;
+  margin-left: 0%;
+  margin-top: 10%;
+  padding:2%;
+  width: 25%;
+}
+
+.createInputs{
+  margin-left: 40px;  
+}
+
+.logBtn {
+  background-color: lightpink;
+  background-size: 200% auto;
+  border-color: white;
+  border-radius: 10px;
+  border-width: 2px;
+  color: white;
+  display: block;
+  font-size: 10pt;
+  margin: 0 auto;
+  padding: 5%;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100px;
+}
+
+.logBtn:hover {
+  background-image: linear-gradient(to right, white 0%, lightpink 51%, pink 100%);
+  background-position: right center; /* change the direction of the change here */
+  transition: 0.8s;
+}
+
+.logContainer{
+  background-color: lightpink;
+  border-color:white;
+  border-width: 1px; /* this allows you to adjust the thickness */
+  border-style: solid;
+  color: white;
+  margin-top: 10%;
+  padding:2%;
+  text-align: center;
+  width: 15%;
+}
+
+
+/*Header*/
+
+.Header{
+  border-bottom: 2px solid #000;
+  margin: 0 auto;
+  max-width: 1048px;
+}
+
+.Header nav {
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 25px;
+}
+
+.Header nav a {
+  display: inline-block;
+  padding: 5px 15px;
 }

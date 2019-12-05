@@ -1,34 +1,20 @@
 import React from "react";
+import LoginForm from "../../components/LoginForm";
 
-export default function Login() {
-	function submitFunction(e) {
-		console.log(e);
-	}
-
-// export default function userProfile() {
-// 	return (
-// 		<div>
-// 			<div>Login</div>
-// 			<UserInformation />
-// 		</div>
-// 	);
-// }
-
-
+export default function Login({ loginFunction }) {
 	return (
-		<form action='/submit' method='GET' className="formContainer">
-
-			<label for='loginEmail'>Email</label>
-			<input type='text' name='email' placeholder='who@where.com' />
-			<br>
-			<br>
-			<label for='loginPassword'>Password</label>
-			<input type='text' name='text' placeholder='..........' />
-			<br>
-			<br>
-			<input type='submit' value='submit' className="btn" />
-		</form>
+	<div className='login'>
+			<div className='formContainer'>
+				<LoginForm loginFunction={loginFunction} />
+			</div>
+			<div className='joinContainer'>
+				<form action='/signup' method='GET'>
+					<h1>Hello, Friend!</h1>
+					<h3>Don't have an account yet? Join us here!</h3>
+					<br/>
+					<input type='submit' value='Sign Up' className="joinBtn" />
+				</form>
+			</div>
+		</div>
 	);	
 }
-
-export default LoginForm;
